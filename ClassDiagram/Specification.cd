@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MasterProject.SharedKernel.Specification.BaseEntityByIdSpecification&lt;T&gt;" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\BaseEntityByIdSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterProject.SharedKernel.Specification.BaseEntityCreatedBySpecification&lt;T&gt;" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\BaseEntityCreatedBySpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterProject.SharedKernel.Specification.BaseEntityUpdatedBySpecification&lt;T&gt;" Collapsed="true">
+    <Position X="11.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\BaseEntityUpdatedBySpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterProject.SharedKernel.Specification.BaseSpecification&lt;T&gt;" Collapsed="true">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABEgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\BaseSpecification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MasterProject.SharedKernel.Specification.MasterEntityCodeSpecification&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\MasterEntityCodeSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterProject.SharedKernel.Specification.MasterEntityDeletedSpecification&lt;T&gt;" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\MasterEntityDeletedSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterProject.SharedKernel.Specification.MasterEntityNameSpecification&lt;T&gt;" Collapsed="true">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\MasterEntityNameSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterProject.SharedKernel.Extension.SpecificationExtension" Collapsed="true">
+    <Position X="11" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\SpecificationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MasterProject.SharedKernel.Interface.ISpecification&lt;T&gt;" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specification\ISpecification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
