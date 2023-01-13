@@ -5,9 +5,9 @@ using System.ComponentModel.DataAnnotations;
 namespace MasterProject.SharedKernel.Entities
 {
     /// <summary>
-    /// This class will be inherated  by the master entities. eg. Country, City, State
+    /// This class will be inherated  by the master entities. eg. Country, City, State, codes.
     /// </summary>
-    public abstract class MasterEntity : BaseEntity, IAggregate
+    public abstract class MasterEntity : BaseEntityWithLogs
     {
         /// <summary>
         /// Alternate key. This is the unique code that will be used for retriving the values. 

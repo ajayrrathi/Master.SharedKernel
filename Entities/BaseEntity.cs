@@ -17,30 +17,5 @@ namespace MasterProject.SharedKernel.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public virtual Guid Id { get; set; }
 
-        /// <summary>
-        /// Audit field. This field will store the Id of the user who have added the entity. 
-        /// </summary>
-        [ScaffoldColumn(false)]
-        public virtual Guid? CreatedById { get; set; }
-
-        /// <summary>
-        /// Audit Field. This field will store Id of the user who have modified it last. 
-        /// </summary>
-        [ScaffoldColumn(false)]
-        public virtual Guid? UpdatedByID { get; set; }
-
-        /// <summary>
-        /// Audit Field. This field will store the date the entity detials was created.
-        /// </summary>
-        [DataType(DataType.DateTime)]
-        [ScaffoldColumn(false)]
-        public virtual DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Audit Field. This field will store the last modified date for the entity record. 
-        /// </summary>
-        [DataType(DataType.DateTime)]
-        [ScaffoldColumn(false)]
-        public virtual DateTime? UpdatedOn { get; set; }
     }
 }
