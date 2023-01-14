@@ -6,15 +6,42 @@ using System.Threading.Tasks;
 
 namespace MasterProject.SharedKernel.Entities
 {
-    public abstract class Result
+    /// <summary>
+    /// Abstract class for operation result for returing values.
+    /// </summary>
+    public class Message<T> : IMessage<T> where T : class
     {
-        public virtual bool IsSuccess { get; } 
-        public virtual string Message { get; }
 
-        public Result(string message, bool isSuccess)
+        /// <summary>
+        /// Indicate operation status.
+        /// </summary>
+        public bool IsSuccessful { get; }
+
+        public IList<T> Values { get; }
+
+        /// <summary>
+        /// Private constractor for creating object for the message class.
+        /// </summary>
+        /// <param name="isSuccess">Operation indicater.</param>
+        /// <param name="values">list of operation result.</param>
+        protected Message(bool isSuccess, IList<T> values)
         {
-            Message = message;
-            IsSuccess = isSuccess;
-         }
+            IsSuccessful = isSuccess;
+            Values = values;
+        }
+
+        /// <summary>
+        /// private method for generating object of message.
+        /// </summary>
+        /// <param name="isSuccessful">Indicate operation status</param>
+        /// <param name="values">Return operation result values or error messages.</param>
+        /// <returns></returns>
+        protected internal static IMessage<T> GetMessage(bool isSuccessful, IList<T> values)
+        {
+            return new Message<T>(
+              isSuccessful,
+              values
+              );
+        }
     }
 }
