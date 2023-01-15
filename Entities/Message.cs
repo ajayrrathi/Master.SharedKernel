@@ -9,7 +9,7 @@ namespace MasterProject.SharedKernel.Entities
     /// <summary>
     /// Abstract class for operation result for returing values.
     /// </summary>
-    public class Message<T> : IMessage<T> where T : class
+    public class Message<T> : IMessage where T : class
     {
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace MasterProject.SharedKernel.Entities
         /// <param name="isSuccessful">Indicate operation status</param>
         /// <param name="values">Return operation result values or error messages.</param>
         /// <returns></returns>
-        protected internal static IMessage<T> GetMessage(bool isSuccessful, IList<T> values)
+        protected internal static IMessage GetMessage(bool isSuccessful, IList<T> values)
         {
             return new Message<T>(
               isSuccessful,

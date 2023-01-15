@@ -10,7 +10,7 @@ namespace MasterProject.SharedKernel.Entities
         /// </summary>
         /// <param name="values">List of operation result.</param>
         /// <returns>Return operation result values or messages.</returns>
-        public static IMessage<T> Successful<T>(IList<T> values) where T : BaseEntity
+        public static IMessage Successful<T>(IList<T> values) where T : BaseEntity
         {
             return Message<T>.GetMessage(true, values);
         }
@@ -19,7 +19,7 @@ namespace MasterProject.SharedKernel.Entities
         /// </summary>
         /// <param name="value">Operation value.</param>
         /// <returns>Return operation result values or messages.</returns>
-        public static IMessage<T> Successful<T>(T value) where T : BaseEntity
+        public static IMessage Successful<T>(T value) where T : BaseEntity
         {
             if (value == null)
                 return Successful<T>(
@@ -34,7 +34,7 @@ namespace MasterProject.SharedKernel.Entities
         /// </summary>
         /// <param name="message">Return failure with operation messages.</param>
         /// <returns>Return operation messages.</returns>
-        public static IMessage<string> Error(IList<string> message)
+        public static IMessage Error(IList<string> message)
         {
             return Message<string>.GetMessage(false, message);
         }
@@ -43,7 +43,7 @@ namespace MasterProject.SharedKernel.Entities
         /// </summary>
         /// <param name="message">Return failure with operation messages.</param>
         /// <returns>Return operation messages.</returns>
-        public static IMessage<string> Error(string message)
+        public static IMessage Error(string message)
         {
             if (message == null)
                 return Error(
