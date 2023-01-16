@@ -17,14 +17,14 @@ namespace MasterProject.SharedKernel.Entities
         /// </summary>
         public bool IsSuccessful { get; }
 
-        public IList<T> Values { get; }
+        public T Values { get; }
 
         /// <summary>
         /// Private constractor for creating object for the message class.
         /// </summary>
         /// <param name="isSuccess">Operation indicater.</param>
         /// <param name="values">list of operation result.</param>
-        protected Message(bool isSuccess, IList<T> values)
+        protected Message(bool isSuccess,T values)
         {
             IsSuccessful = isSuccess;
             Values = values;
@@ -36,7 +36,7 @@ namespace MasterProject.SharedKernel.Entities
         /// <param name="isSuccessful">Indicate operation status</param>
         /// <param name="values">Return operation result values or error messages.</param>
         /// <returns></returns>
-        protected internal static IMessage GetMessage(bool isSuccessful, IList<T> values)
+        protected internal static IMessage GetMessage(bool isSuccessful, T values)
         {
             return new Message<T>(
               isSuccessful,
