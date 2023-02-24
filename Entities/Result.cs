@@ -57,6 +57,11 @@ namespace MasterProject.SharedKernel.Entities
         {
             return Error(string.Empty);
         }
+
+        public static T GetValue<T>(IMessage message) where T : class {
+            var result = (Message<T>) message;
+            return result.Values;
+        }
     }
 }
 

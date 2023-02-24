@@ -28,8 +28,10 @@ namespace MasterProject.SharedKernel.Extension
 
             var SecondaryResult = specification.IncludeStrings.Aggregate(quearyableResultWithIncludes,
                                 (current, include) => current.Include(include));
-
-            return SecondaryResult.Where(specification.Criteria);
+            if (specification.Criteria != null)
+                return SecondaryResult.Where(specification.Criteria);
+            else
+                return SecondaryResult.AsQueryable<T>();
         }
     }
 }

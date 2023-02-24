@@ -26,14 +26,14 @@ namespace MasterProject.SharedKernel.Specification
         /// List of Entities that will be included along with selected entities.
         /// </summary>
         /// <param name="includeExpresion">Expression that will be added to list.</param>
-        protected virtual void AddInclude(Expression<Func<T, object>> includeExpresion)
+        public virtual void AddInclude(Expression<Func<T, object>> includeExpresion)
         {
             Includes.Add(includeExpresion);
         }
         /// <summary>
         /// Entities as string, that should be included with selected entities.
         /// </summary>
-        protected virtual void AddInclude(string includeString)
+        public virtual void AddInclude(string includeString)
         {
             IncludeStrings.Add(includeString);
         }
